@@ -1,0 +1,18 @@
+custom_trigger_tooltip = {
+        tooltip = tooltip_has_colonial_subject_in_new_world
+        OR = {
+            has_port = yes
+            is_capital = yes
+        }
+        owner = {
+        num_of_colonial_subjects = 1
+            any_subject_country = {
+                is_colonial_nation = yes
+                OR = {
+                    capital_scope = { continent = north_america }
+                    capital_scope = { continent = south_america }
+                    capital_scope = { continent = new_world }
+                }
+            }
+        }
+    }
